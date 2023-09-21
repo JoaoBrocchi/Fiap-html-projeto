@@ -1,0 +1,480 @@
+.flexbox {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.banner {
+    display: grid;
+    grid-template-columns: 980px;
+    grid-template-rows: minmax(45px, auto) auto 45px;
+    grid-row-gap: 0;
+    grid-column-gap: 0;
+    background-color: #660000;
+}
+li {
+    list-style: none;
+    display: inline;
+    font: arial;
+    color: white;
+    font-size: 12px;
+    padding: 10px;
+    
+}
+
+.banner-img {
+    grid-area: 2/1/2/-1;
+}
+
+.nav-bar-top{
+    display: flex;
+    flex-direction: row-reverse;
+    background-color: #1b8e99;
+    
+}
+.nav-bar-top a:hover{
+    background-color: #92c9ce;
+    padding: 1.5em;
+}
+
+.nav-bar-bot{
+    display: flex;
+    flex-direction: row;
+    background-color: #660000;  
+    
+}
+.nav-bar-bot ul {
+    padding: 2px;
+    display: inline-flex;
+    align-items: center;
+    
+    
+}
+
+
+
+.nav-bar-bot a:hover{
+    background-color: white;
+    color: #660000;
+    padding: 1.5em;
+}
+
+
+
+.drone-box {
+    display: inline;
+    position: absolute;
+    float: left;
+    margin-left: 15px;
+}
+
+
+
+.div-item {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px;
+    padding: 10px;
+    color: white;
+    font-size: large;
+}
+
+.cursos{
+    grid-area: 1,-9,1,-8;
+}
+.serviços{
+    grid-area: 1,-8,1,-7;
+}
+
+.divisao {
+    margin-top: 60px;
+    margin-left: 470px;
+    display: inline-flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.divisao > hr{
+    width: 860px;
+    
+    height: 2px;
+    color: #660000;
+    background-color: #660000;
+}
+
+.drone-linha{
+    float: right;
+}
+
+
+
+
+
+
+.conteudo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.loja-virtual-grid {
+    margin-top: 10px;
+    display:  grid;
+    grid-template-rows: 376px;
+    grid-template-columns: repeat(3,300px);
+    gap: 10px;
+}
+
+.produto{
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    align-items: center;
+    align-content: center;
+    border: #1b8e99 solid 1px;
+    height: 393px;
+   
+}
+.item{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-content: center;
+    
+}
+
+.item > p{
+    font-size: medium;
+    padding: 5px;
+}
+.box-preço {
+    display: flex;
+    background-color: #1b8e99;
+    height: 96px;
+    width: 300px;
+    justify-content: space-evenly;
+    align-items: center;
+    border: 0px;
+    border-bottom: #1b8e99 solid 2px;
+}
+
+.titulo {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    background-color: #92c9ce;
+    height: 35px;
+    width: 300px;
+}
+
+#produto1 >.titulo > h3 {
+    color: #1b8e99;
+    margin-top: 5px;
+}
+
+.div-preço {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+}
+
+.carrinho {
+    width: auto;
+    height: auto;
+    background-color: white;
+    margin-left: 100px;
+}
+a {
+    text-decoration:none;
+    color: white;
+    margin: 0%;
+}
+
+
+.preço > *{
+    margin-left: 20px;
+    padding: 2px;
+    margin:0px;
+    
+}
+
+.descrição-produto {
+    color: #92c9ce;
+    font-size: large;
+}
+
+.preço > h2{
+    margin-left: 20px;
+    padding: 2px;
+    margin:0px;
+    font-size: x-large;
+    
+}
+
+/* referente ao produto 2 */
+
+#produto2{
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    align-items: center;
+    align-content: center;
+    border: #660000 solid 1px;
+    height: 393px;
+   
+}
+.item{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-content: center;
+    
+}
+
+.item > p{
+    font-size: medium;
+    padding: 5px;
+}
+#produto2 .box-preço  {
+    display: flex;
+    background-color: #660000;
+    height: 96px;
+    width: 300px;
+    justify-content: space-evenly;
+    align-items: center;
+    border: 0px;
+    border-bottom: #660000 solid 2px;
+}
+
+#produto2 .titulo {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    background-color: #EADCDC;
+    height: 35px;
+    width: 300px;
+}
+
+#produto2 >.titulo > h3 {
+    color: #660000;
+    margin-top: 5px;
+}
+
+.div-preço {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+    
+
+}
+
+.carrinho {
+    width: auto;
+    height: auto;
+    background-color: white;
+    margin-left: 100px;
+}
+a {
+    text-decoration:none;
+    color: white;
+    margin: 0%;
+}
+
+.loja-virtual > a{
+    color: #660000;
+}
+
+.preço > *{
+    margin-left: 20px;
+    padding: 2px;
+    margin:0px;
+    
+}
+
+
+#produto2 .descrição-produto  {
+    color: #660000;
+    font-size: medium;
+}
+
+.preço2 > h2{
+    margin-left: 20px;
+    padding: 2px;
+    margin:0px;
+    font-size: x-large;
+    
+}
+
+.divisao2 {
+    margin-top: 60px;
+    margin-left: 482px;
+    display: inline-flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.divisao-produto-serviço {
+    color: #444444;
+    background-color: #444444;
+    width: 920px;
+    height: 8px;
+}
+
+
+
+.div-serviços {
+    display: grid;
+    grid-template-rows: repeat(2, auto);
+}
+
+.ultima-divisao {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.ultima-divisao hr {
+    color : #1c8e99;
+    background-color : #1c8e99;
+    width: 800px;
+    height: 1px;
+}
+
+/* REFERENTE A SERVIÇOS */
+#serviços {
+    margin-left: 5px;
+    font: arial ;
+    color : #1c8e99;
+    font-size: 18px;
+}
+
+.container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+}
+
+.service-card{
+    width: 300px;
+    margin: 0.5em;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    gap: 5px;
+    height: 320px;
+    width: 300px;
+     
+}
+#um {
+    border: 1px solid #660000;
+    border-bottom: 8px solid #660000;
+    color: #660000;
+}
+
+#dois {
+    border: 1px solid #1b8e99;
+    border-bottom: 8px solid #1b8e99;
+    color: #1b8e99;
+}
+
+.service-card h2{
+    margin: 0.2em;
+    margin-left: 0.7em;
+    font: tahoma;
+    font-size: 17px;
+    
+}
+.service-card p{
+    margin: 0.7em;
+    font: tahoma;
+    font-size: 13px;
+    height: max-content;
+    
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 5em;
+}
+
+.footer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+    
+}
+
+#red {
+    background-color: #660000;
+    width: 100vh;
+    height: 26px;
+    display: flex;
+    align-items: center;
+    flex-direction: row-reverse;
+    
+}
+#red p {
+    padding-right: 120px;
+}
+
+#blue {
+    background-color: #1b8e99;
+    display: flex;
+    align-items: center;
+    padding: 1em 0 1em 0;
+    width: 100vh;
+
+}
+
+#drones {
+    display: flex;
+    width: 100vh;
+    justify-content: flex-start; 
+    
+}
+
+
+.drone2 {
+    display: flex;
+    margin-left: 120px;
+    
+}
+.drone3 {
+    display: flex;
+    justify-self:flex-start;
+    margin-left: 20vh;
+    
+}
+
+#dronesnet {
+    float: left;
+    padding: 10px;
+}
+
+.footer p {
+    color: white;
+    padding-left: 4em;
+    font: tahoma;
+    font-size: 14px;
+}
+
+.profImg {
+    position: relative;
+    left: 400px;
+    bottom: 12.3em;
+}
+
